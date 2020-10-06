@@ -11,7 +11,7 @@
 
 <!--添加模块-->
     <modules>
-        <module>modle-test</module>
+        <module>demo-1-helloworld</module>
     </modules>
 
 </project>
