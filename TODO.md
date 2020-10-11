@@ -3,7 +3,7 @@
 --------------------------------
 ## 模块计划
 
-- [ ] modle-test（Helloworld 示例）
+- [x] modle-test（Helloworld 示例）
 - [ ] spring-boot-demo-properties（读取配置文件信息）
 - [ ] spring-boot-demo-actuator（对 Spring boot 的端点监控）
 - [ ] spring-boot-demo-admin-client（对 Spring boot 可视化管控 客户端）
