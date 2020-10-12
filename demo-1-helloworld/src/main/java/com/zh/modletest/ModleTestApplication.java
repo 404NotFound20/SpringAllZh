@@ -1,16 +1,31 @@
 package com.zh.modletest;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication//开启组件扫描和自动配置
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+@Slf4j
 public class ModleTestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ModleTestApplication.class, args);
+		ConfigurableApplicationContext context=SpringApplication.run(ModleTestApplication.class, args);
+		int length = context.getBeanDefinitionNames().length;
+		log.trace("Spring boot启动初始化了 {} 个 Bean", length);
+		log.debug("Spring boot启动初始化了 {} 个 Bean", length);
+		log.info("Spring boot启动初始化了 {} 个 Bean", length);
+		log.warn("Spring boot启动初始化了 {} 个 Bean", length);
+		log.error("Spring boot启动初始化了 {} 个 Bean", length);
+//		try {
+//			int i = 0;
+//			int j = 1 / i;
+//		} catch (Exception e) {
+//			log.error("【SpringBootDemoLogbackApplication】启动异常：", e);
+//		}
 	}
 
 }
