@@ -1,8 +1,0 @@
-application:
-  name: @artifactId@
-  version: @version@
-developer:
-  name: ender
-  website: http://ender.com
-  qq: 1818182331
-  phone-number: 432423523
