@@ -1,13 +1,13 @@
 server:
   port: 8082
   servlet:
-   context-path: /demo
+   context-path: /ender
 
 application:
   name: @artifactId@
   version: @version@
 developer:
   name: ender
-  website: http://ender.com
+  website: http://ender.leek.run
   qq: 1818182331
   phone-number: 432423523
